@@ -1,0 +1,567 @@
+/* style.css */
+
+
+
+/* Universal thing for my page  */
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+*{
+  margin: 0%;
+  width: 100%;
+  padding: 0%;
+}
+
+
+body::before{
+  content: ' ';
+  text-align: center;
+  background: url('../static/pic/73.jpg')no-repeat center center/cover;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  opacity: 0.92;
+}
+
+
+/* media quries */
+
+@media only screen and (min-width: 0px) and (max-width: 509px) {
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin: 5px auto;
+    background-color: rgba(0, 0, 0, 0.904);
+    text-align: center;
+    border-radius: 9px;
+  }
+  
+  
+  #navbar ul{
+    display: flex;
+  }
+  
+  #navbar ul li{
+    list-style-type: none;
+    padding: 20px;
+  }
+  
+  
+  #navbar ul li a{
+    color: rgb(196, 5, 5);
+    text-decoration: none;
+    text-shadow: 1px 0px rgba(255, 255, 255, 0.808);
+    font-family: 'Zen Dots', cursive;
+    font-size: 1.1rem;
+  }
+  
+  /*Section part*/
+  #first-section{
+    background-color: rgba(43, 43, 43, 0.580);
+    width: 90%;
+    margin: 19px auto;
+    display: grid;
+    grid-gap: 14px;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(214, 214, 214);
+    border-radius: 9px ;
+    font-family: 'Zen Dots', cursive;
+    /* box-shadow: 0px 0px 10px 10px rgba(43, 43, 43, 0.507); */
+  }
+  
+  #main-slogan{
+    width: 800px;
+    margin: auto;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow:  2px 0px rgb(124, 255, 2);
+    /* box-shadow: 0px 0px 8px 8px rgba(43, 43, 43, 0.580); */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-decoration: underline;
+    text-align: center;
+    
+  }
+  #slogans ul{
+    display: grid;
+  
+  }
+  .slogan{
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px 0px;
+    /* text-shadow:  2px 0px rgb(255, 2, 2); */
+    list-style-image: url("../static/pic/shooting.png");
+  }
+  
+  
+  
+  
+  /* part second of section  */
+  #second-section form{
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Reggae One', cursive;
+  }
+  
+  #second-section form h1 {
+    font-family: 'Zen Dots', cursive;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-lighter);
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  input {
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 0.75rem;
+    padding: 10px;
+    border:2px solid red;
+    width: 450px;
+    border-radius: 4px;
+  }
+  
+  .input{
+    padding: 13px;
+  }
+  
+  #submit{
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    margin-top: 14px;
+  }
+  
+  .checkbox{
+    width: 23px;
+  }
+
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 510px) and (max-width: 800px) {
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin: 5px auto;
+    background-color: rgba(0, 0, 0, 0.904);
+    text-align: center;
+    border-radius: 9px;
+  }
+  
+  
+  #navbar ul{
+    display: flex;
+  }
+  
+  #navbar ul li{
+    list-style-type: none;
+    padding: 20px;
+  }
+  
+  
+  #navbar ul li a{
+    color: rgb(196, 5, 5);
+    text-decoration: none;
+    text-shadow: 1px 0px rgba(255, 255, 255, 0.808);
+    font-family: 'Zen Dots', cursive;
+    font-size: 1.1rem;
+  }
+  
+  /*Section part*/
+  #first-section{
+    background-color: rgba(43, 43, 43, 0.580);
+    width: 90%;
+    margin: 19px auto;
+    display: grid;
+    grid-gap: 14px;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(214, 214, 214);
+    border-radius: 9px ;
+    font-family: 'Zen Dots', cursive;
+    /* box-shadow: 0px 0px 10px 10px rgba(43, 43, 43, 0.507); */
+  }
+  
+  #main-slogan{
+    width: 800px;
+    margin: auto;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow:  2px 0px rgb(124, 255, 2);
+    /* box-shadow: 0px 0px 8px 8px rgba(43, 43, 43, 0.580); */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-decoration: underline;
+    text-align: center;
+    
+  }
+  #slogans ul{
+    display: grid;
+  
+  }
+  .slogan{
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px 0px;
+    /* text-shadow:  2px 0px rgb(255, 2, 2); */
+    list-style-image: url("../static/pic/shooting.png");
+  }
+  
+  
+  
+  
+  /* part second of section  */
+  #second-section form{
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Reggae One', cursive;
+  }
+  
+  #second-section form h1 {
+    font-family: 'Zen Dots', cursive;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-lighter);
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  input {
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 0.75rem;
+    padding: 10px;
+    border:2px solid red;
+    width: 450px;
+    border-radius: 4px;
+  }
+  
+  .input{
+    padding: 13px;
+  }
+  
+  #submit{
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    margin-top: 14px;
+  }
+  
+  .checkbox{
+    width: 23px;
+  }
+
+}
+
+
+
+
+
+@media only screen and (min-width: 800px) and (max-width: 1100px) {
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin: 5px auto;
+    background-color: rgba(0, 0, 0, 0.904);
+    text-align: center;
+    border-radius: 9px;
+  }
+  
+  
+  #navbar ul{
+    display: flex;
+  }
+  
+  #navbar ul li{
+    list-style-type: none;
+    padding: 20px;
+  }
+  
+  
+  #navbar ul li a{
+    color: rgb(196, 5, 5);
+    text-decoration: none;
+    text-shadow: 1px 0px rgba(255, 255, 255, 0.808);
+    font-family: 'Zen Dots', cursive;
+    font-size: 1.1rem;
+  }
+  
+  /*Section part*/
+  #first-section{
+    background-color: rgba(43, 43, 43, 0.580);
+    width: 90%;
+    margin: 19px auto;
+    display: grid;
+    grid-gap: 14px;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(214, 214, 214);
+    border-radius: 9px ;
+    font-family: 'Zen Dots', cursive;
+    /* box-shadow: 0px 0px 10px 10px rgba(43, 43, 43, 0.507); */
+  }
+  
+  #main-slogan{
+    width: 800px;
+    margin: auto;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow:  2px 0px rgb(124, 255, 2);
+    /* box-shadow: 0px 0px 8px 8px rgba(43, 43, 43, 0.580); */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-decoration: underline;
+    text-align: center;
+    
+  }
+  #slogans ul{
+    display: grid;
+  
+  }
+  .slogan{
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px 0px;
+    /* text-shadow:  2px 0px rgb(255, 2, 2); */
+    list-style-image: url("../static/pic/shooting.png");
+  }
+  
+  
+  
+  
+  /* part second of section  */
+  #second-section form{
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Reggae One', cursive;
+  }
+  
+  #second-section form h1 {
+    font-family: 'Zen Dots', cursive;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-lighter);
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  input {
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 0.75rem;
+    padding: 10px;
+    border:2px solid red;
+    width: 450px;
+    border-radius: 4px;
+  }
+  
+  .input{
+    padding: 13px;
+  }
+  
+  #submit{
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    margin-top: 14px;
+  }
+  
+  .checkbox{
+    width: 23px;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1101px) {
+  
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin: 5px auto;
+    background-color: rgba(0, 0, 0, 0.904);
+    text-align: center;
+    border-radius: 9px;
+  }
+  
+  
+  #navbar ul{
+    display: flex;
+  }
+  
+  #navbar ul li{
+    list-style-type: none;
+    padding: 20px;
+  }
+  
+  
+  #navbar ul li a{
+    color: rgb(196, 5, 5);
+    text-decoration: none;
+    text-shadow: 1px 0px rgba(255, 255, 255, 0.808);
+    font-family: 'Zen Dots', cursive;
+    font-size: 1.1rem;
+  }
+  
+  /*Section part*/
+  #first-section{
+    background-color: rgba(43, 43, 43, 0.580);
+    width: 90%;
+    margin: 100px auto;
+    display: grid;
+    grid-gap: 14px;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(214, 214, 214);
+    border-radius: 9px ;
+    font-family: 'Zen Dots', cursive;
+    /* box-shadow: 0px 0px 10px 10px rgba(43, 43, 43, 0.507); */
+  }
+  
+  #main-slogan{
+    width: 800px;
+    margin: auto;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow:  2px 0px rgb(124, 255, 2);
+    /* box-shadow: 0px 0px 8px 8px rgba(43, 43, 43, 0.580); */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-decoration: underline;
+    text-align: center;
+    
+  }
+  #slogans ul{
+    display: grid;
+  
+  }
+  .slogan{
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px 0px;
+    /* text-shadow:  2px 0px rgb(255, 2, 2); */
+    list-style-image: url("../static/pic/shooting.png");
+  }
+  
+  
+  
+  
+  /* part second of section  */
+  #second-section form{
+    max-width: 30rem;
+    margin: 2rem auto;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Reggae One', cursive;
+  }
+  
+  #second-section form h1 {
+    font-family: 'Zen Dots', cursive;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-lighter);
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  
+  input {
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 0.75rem;
+    padding: 10px;
+    border:2px solid red;
+    width: 450px;
+    border-radius: 4px;
+  }
+  
+  .input{
+    padding: 13px;
+  }
+  
+  #submit{
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    margin-top: 14px;
+  }
+  
+  .checkbox{
+    width: 23px;
+  }
+
+  footer{
+    height: 150px;
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer h2{
+    font-family: 'Zen Dots', cursive;
+
+  }
+}
+
+
+

@@ -1,0 +1,81 @@
+//- index.pug
+doctype html
+html
+  head
+    title ErMapsh Esport Acedamy 
+    style
+      include ../static/style.css
+  body
+   //- nav#navbar.top 
+    //-   ul
+    //-     li #[a(href='https://pugjs.org/api/getting-started.html' target= "_blank") Pug Document] 
+    //-     li #[a(href='/contactus' target= "_blank") Contact us]
+    //-     li #[a(href='/') Own]
+    //-     li #[a(href='https://html-to-pug.com' target= "_blank") HtmlToPug]
+    //-     li #[a(href='https://codewithharry.com/' target= "_blank") CodeWithHarry]
+
+    //- p#login #[a(href='/login') Log in]
+
+        //- this is a method i was found
+        //- li
+        //-   a(href='https://www.google.com'  target= "_blank") Google
+        //-   |
+        //- li
+        //-   a(href='https://www.fb.com' target= "_blank") Facebook
+        //-   | 
+        //- li
+        //-   a(href='https://html-to-pug.com/' target= "_blank") uber
+        //-   | 
+        //- li
+        //-   a(href='https://www.yahoo.com' target= "_blank") yahoo
+        //-   | 
+        //- li
+        //-   a(href='https://www.codewithharry.com' target= "_blank") Ipl
+        //-   | 
+    section
+      div#first-section
+        p#main-slogan.slogan Eat-Sleep-Play-Repeat
+        div#slogans
+          ul
+            li#slogan1.slogan
+              |Don't play the game. Win it.
+            li#slogan2.slogan
+              |Life is a game, Play to win.
+            li#slogan3.slogan
+              |Life Is More Fun If You Play Games.
+            li#slogan4.slogan
+              |Just one more game.
+
+              
+      div#second-section 
+        form(action="/", method="post")
+          h1 Join ErMapsh Esport Acedamy 
+          div#Error-msg
+          p#Username.input
+            label(for="Username") Username 
+            input(type="text" placeholder="Username" id="Username"  name="username"  required)
+
+          p#Full-Name.input
+            label(for="Name") Name
+            input(type="text" placeholder="Enter Full Name" id="Full-Name" name="name" required)
+          
+            
+
+          P#Email.input
+            label(for="Email") Email 
+            input(type="email", name="email" required)
+
+          p#password.input
+            label(for="Password") Password 
+            input(type="password", id="psw" name="psw" required)
+
+          p#checkbox
+            input(type="checkbox", name="checkbox", class="checkbox") 
+            label(for="checkbox" required) I agree to the Terms and Conditions
+
+          input(type="submit", value="submit", id="submit")
+    script
+      include ../static/index.js
+
+  
+

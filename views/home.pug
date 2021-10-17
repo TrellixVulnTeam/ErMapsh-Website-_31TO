@@ -1,0 +1,39 @@
+//- home.pug
+extends base.pug
+
+block scripts
+  script(src='../static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+  
+    //- nav#navbar.top 
+    //-   ul
+    //-     li #[a(href='https://pugjs.org/api/getting-started.html' target= "_blank") Pug Document] 
+    //-     li #[a(href='/contactus' target= "_blank") Contact us]
+    //-     li #[a(href='/') Own]
+    //-     li #[a(href='https://html-to-pug.com' target= "_blank") HtmlToPug]
+    //-     li #[a(href='https://codewithharry.com/' target= "_blank") CodeWithHarry]
+
+    section
+      div#first-section
+        p#main-slogan.slogan Eat-Sleep-Play-Repeat
+        div#slogans
+          ul
+            li#slogan1.slogan
+              |Don't play the game. Win it.
+            li#slogan2.slogan
+              |Life is a game, Play to win.
+            li#slogan3.slogan
+              |Life Is More Fun If You Play Games.
+            li#slogan4.slogan
+              |Just one more game.
+
+              
+      
+    script
+      include ../static/index.js
+
